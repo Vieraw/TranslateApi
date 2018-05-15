@@ -14,8 +14,8 @@ try
 {
     $gt = new GoogleTranslate(array('verifyPeer' => false));
     echo
-    $gt->translate('en', 'en', 'Привет'),
-    $gt->translit('en', 'en', 'Привет');
+    $gt->translate('ru', 'en', 'Привет'),
+    $gt->translit('ru', 'en', 'Привет');
 }
 catch (\Throwable $e)
 {
