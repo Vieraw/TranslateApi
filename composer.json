@@ -1,0 +1,14 @@
+{
+  "name": "Vieraw/TranslateApi",
+  "authors": [
+    {
+      "name": "Vieraw",
+      "email": "vieraw@quissa.pw"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "TranslateApi\\": "TranslateApi/"
+    }
+  }
+}
