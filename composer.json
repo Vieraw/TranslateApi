@@ -10,5 +10,9 @@
     "psr-4": {
       "TranslateApi\\": "TranslateApi/"
     }
+  },
+  "require":
+  {
+    "php": "^7"
   }
 }
