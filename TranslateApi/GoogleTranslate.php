@@ -53,7 +53,7 @@
         {
             $request = $this->sendRequest($from, $to, $subject);
 
-            return $this->getSentences('src_translit', $request);
+            return $this->getSentences('trans', $request);
 
         }
 
