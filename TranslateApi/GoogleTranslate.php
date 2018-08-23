@@ -29,13 +29,13 @@
         }
 
         /**
-         * @param string $from
-         * @param string $to
          * @param string $subject
+         * @param string $to
+         * @param string|null $from
          * @return string
          * @throws TranslateException
          */
-        public function translate (string $from, string $to, string $subject) : string
+        public function translate (string $subject,  string $to, string $from = null) : string
         {
             $request = $this->sendRequest($from, $to, $subject);
 
@@ -43,13 +43,13 @@
         }
 
         /**
-         * @param string $from
-         * @param string $to
          * @param string $subject
+         * @param string $to
+         * @param string|null $from
          * @return string
          * @throws TranslateException
          */
-        public function translit (string $from, string $to, string $subject) : string
+        public function translit (string $subject,  string $to, string $from = null) : string
         {
             $request = $this->sendRequest($from, $to, $subject);
 
