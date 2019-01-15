@@ -93,16 +93,16 @@
         /**
          * @param string $subject
          * @param string $to
-         * @param string|null $from
+         * @param string $from
          * @return string
          */
-        abstract public function translate (string $subject,  string $to, string $from = null) : string;
+        abstract public function translate (string $subject,  string $to, string $from = 'auto') : string;
 
         /**
          * @param string $subject
          * @param string $to
-         * @param string|null $from
+         * @param string $from
          * @return string
          */
-        abstract public function translit (string $subject,  string $to, string $from = null) : string;
+        abstract public function translit (string $subject,  string $to, string $from = 'auto') : string;
     }

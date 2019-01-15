@@ -31,11 +31,11 @@
         /**
          * @param string $subject
          * @param string $to
-         * @param string|null $from
+         * @param string $from
          * @return string
          * @throws TranslateException
          */
-        public function translate (string $subject,  string $to, string $from = null) : string
+        public function translate (string $subject,  string $to, string $from = 'auto') : string
         {
             $request = $this->sendRequest($from, $to, $subject);
 
@@ -45,11 +45,11 @@
         /**
          * @param string $subject
          * @param string $to
-         * @param string|null $from
+         * @param string $from
          * @return string
          * @throws TranslateException
          */
-        public function translit (string $subject,  string $to, string $from = null) : string
+        public function translit (string $subject,  string $to, string $from = 'auto') : string
         {
             $request = $this->sendRequest($from, $to, $subject);
 
